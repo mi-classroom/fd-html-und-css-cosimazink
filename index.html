@@ -5,20 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectSurvival4All – Survival-Tipps für die Projektarbeit</title>
-    <link rel“stylesheet“ href="">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+    <link rel="stylesheet" href="./assets/styles/icons.css">
+    <link rel="stylesheet" href="./assets/styles/variables.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/components.css">
 </head>
 
 <body>
-    <nav>
+    <!--  <nav id="mainNav">
         <ul>
-            <li><a href="pages/about/about-the-project.html#einleitung">Einleitung</a></li>
-            <li><a href="pages/about/about-the-project.html#zielsetzung">Zielsetzung</a></li>
-            <li><a href="pages/about/about-the-project.html#anwendung">Anwendung der Plattform</a></li>
-            <li><a href="pages/about/about-the-project.html#projekte">Wichtige Projekte und Phasen</a></li>
+            <li><a href="about/about-the-project.html#einleitung">Einleitung</a></li>
+            <li><a href="about/about-the-project.html#zielsetzung">Zielsetzung</a></li>
+            <li><a href="about/about-the-project.html#anwendung">Anwendung der Plattform</a></li>
+            <li><a href="about/about-the-project.html#projekte">Wichtige Projekte und Phasen</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
-    <header>
+    <header class="main-header">
         <nav>
             <a href="/">
                 <h1><img src="./images/logo.png" alt="Logo"></h1>
@@ -27,7 +32,7 @@
     </header>
 
     <main>
-        <section id="welcome">
+        <section class="welcome">
             <h2>Willkommen!</h2>
             <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu
                 besitzen, sondern auch praxiserprobte Methoden,
@@ -41,154 +46,153 @@
                 Level heben kann.
             </p>
         </section>
-
         <section>
-            <h2>Favoriten</h2>
-            <ul>
-                <li>
-                    <p>Wie baue ich eine Präsentation auf?</p>
-                    <p>Monika Engelen</p>
+            <h2 class="hedlines">Favoriten</h2>
+            <ul class="fav-list">
+                <li class="fav-item">
+                    <div><span class="icon"> folder </span>
+                        <p>Wie baue ich eine Präsentation auf?</p>
+                        <p>Monika Engelen</p>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie erstelle ich eine Agenda?</p>
-                    <p>Raphaela Groten</p>
+                <li class="fav-item">
+                    <div><span class="icon"> folder </span>
+                        <p>Wie erstelle ich eine Agenda?</p>
+                        <p>Raphaela Groten</p>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie priorisiere ich (ein Backlog)?</p>
-                    <p>Raphaela Groten</p>
+                <li class="fav-item">
+                    <div><span class="icon"> folder </span>
+                        <p>Wie priorisiere ich (ein Backlog)?</p>
+                        <p>Raphaela Groten</p>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie halte ich einen Pitch?</p>
-                    <p>Monika Engelen</p>
+                <li class="fav-item">
+                    <div><span class="icon"> folder </span>
+                        <p>Wie halte ich einen Pitch?</p>
+                        <p>Monika Engelen</p>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie baue ich eine Präsentation auf?</p>
-                    <p>Monika Engelen</p>
+                <li class="fav-item">
+                    <div><span class="icon"> folder </span>
+                        <p>Wie baue ich eine Präsentation auf?</p>
+                        <p>Monika Engelen</p>
+                    </div>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Von deinem ILU Schreibtisch</h2>
-            <ul>
-                <li>Datenbanken 1</li>
-                <li>Kommunikationstechnik und Netze</li>
-                <li>Paradigmen der Programmierung</li>
-                <li>
-                    <p>Audiovisuelles Medienprojekt</p>
-                    <p>Monika Engelen</p>
-                </li>
-                <li>Grundlagen des Web</li>
-                <li>Screendesign</li>
-                <li>Datenbanken 1</li>
+            <h2 class="hedlines">Von deinem ILU Schreibtisch</h2>
+            <ul class="fav-list">
+                <li class="fav-item"><span class="icon"> folder </span>Datenbanken 1</li>
+                <li class="fav-item"><span class="icon"> folder </span>Kommunikationstechnik und Netze</li>
+                <li class="fav-item"><span class="icon"> folder </span>Paradigmen der Programmierung</li>
+                <li class="fav-item"><span class="icon"> folder </span>Audiovisuelles Medienprojekt</li>
+                <li class="fav-item"><span class="icon"> folder </span>Grundlagen des Web</li>
+                <li class="fav-item"><span class="icon"> folder </span>Screendesign</li>
+                <li class="fav-item"><span class="icon"> folder </span>Datenbanken 1</li>
             </ul>
         </section>
 
         <section>
-            <h2>Verlauf</h2>
-            <ul>
+            <h2 class="hedlines">Verlauf</h2>
+            <time datetime="2024-02-02T04:14:54-08:00">02.Februar.2024</time>
+            <ul class="cards">
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00">02.Februar.2024</time>
-                            <h2>Wie halte ich einen Pitch?</h2>
-                            <p>Monika Engelen</p>
-                        </header>
+                    <figure>
                         <img src="./images/rednerin-praesentation.jpg" width="280" alt="Rednerin-Präsentation">
-                        <p>
+                        <!-- <figcaption>
                             Tipps und Best Practices zur Vorbereitung und Durchführung eines überzeugenden Pitches,
                             einschließlich der Strukturierung des Inhalts, Präsentationstechniken und der Beantwortung
                             von Fragen.
-                        </p>
-                        <section>
-                            <h2>Projektphase</h2>
-                            <ul>
-                                <li>Projektidee</li>
-                                <li>Projektstart</li>
-                                <li>Projektabschluss</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h2>Tags</h2>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisierung</li>
-                                <li>Vortrag</li>
-                            </ul>
-                        </section>
-
-                    </article>
+                        </figcaption> -->
+                    </figure>
+                    <section>
+                        <h2>Wie halte ich einen Pitch?</h2>
+                        <address>Monika Engelen</address>
+                    </section>
+                   <!--  <section>
+                        <h2>Projektphase</h2>
+                        <ul>
+                            <li>Projektidee</li>
+                            <li>Projektstart</li>
+                            <li>Projektabschluss</li>
+                        </ul>
+                    </section> -->
+                    <section class="tag-list">
+                        <ul>
+                            <li>Pitch</li>
+                            <li>Startup</li>
+                            <li>Überzeugen</li>
+                            <li>Visualisierung</li>
+                            <li>Vortrag</li>
+                        </ul>
+                    </section>
                 </li>
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00">02.Februar.2024</time>
-                            <h2>Wie fördere ich effektive Kommunikation im Team?</h2>
-                            <p>Monika Engelen</p>
-                        </header>
+                    <figure>
                         <img src="./images/team-kommunikation.jpg" width="280" alt="Team-Kommunikation">
-                        <p>
+                        <!-- <figcaption>
                             Strategien und Praktiken zur Förderung einer offenen, klaren und effektiven Kommunikation
                             innerhalb eines Teams, einschließlich regelmäßiger Meetings, klarer Kommunikationskanäle und
                             Konfliktlösungstechniken.
-                        </p>
-                        <section>
-                            <h2>Projektphase</h2>
-                            <ul>
-                                <li>Projektstart</li>
-                                <li>Projektabschluss</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h2>Tags</h2>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Vortrag</li>
-                            </ul>
-                        </section>
-
-                    </article>
+                        </figcaption> -->
+                    </figure>
+                    <section>
+                        <h2>Wie fördere ich effektive Kommunikation im Team?</h2>
+                        <address>Monika Engelen</address>
+                    </section>
+                    <!-- <section>
+                        <h2>Projektphase</h2>
+                        <ul>
+                            <li>Projektstart</li>
+                            <li>Projektabschluss</li>
+                        </ul>
+                    </section> -->
+                    <section class="tag-list">
+                        <ul>
+                            <li>Pitch</li>
+                            <li>Startup</li>
+                            <li>Überzeugen</li>
+                            <li>Vortrag</li>
+                        </ul>
+                    </section>
                 </li>
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00">02.Februar.2024</time>
-                            <h2>Wie arbeite ich im Team?</h2>
-                            <p>Monika Engelen</p>
-                        </header>
+                    <figure>
                         <img src="./images/team-arbeit.jpg" width="280" alt="Team-Arbeit">
-                        <p>
+                        <!-- <figcaption>
                             Tipps und Best Practices für eine effektive Zusammenarbeit in einem Team,
                             einschließlich klarer Rollenverteilung, offener Kommunikation und konstruktivem Feedback.
-                        </p>
-                        <section>
-                            <h2>Projektphase</h2>
-                            <ul>
-                                <li>Projektstart</li>
-                                <li>Projektabschluss</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h2>Tags</h2>
-                            <ul>
-                                <li>Gruppenarbeit</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Vortrag</li>
-                            </ul>
-                        </section>
-                    </article>
+                        </figcaption> -->
+                    </figure>
+                    <section>
+                        <h2>Wie arbeite ich im Team?</h2>
+                        <address>Monika Engelen</address>
+                    </section>
+                    <!-- <section>
+                        <h2>Projektphase</h2>
+                        <ul>
+                            <li>Projektstart</li>
+                            <li>Projektabschluss</li>
+                        </ul>
+                    </section> -->
+                    <section class="tag-list">
+                        <ul>
+                            <li>Gruppenarbeit</li>
+                            <li>Startup</li>
+                            <li>Überzeugen</li>
+                            <li>Vortrag</li>
+                        </ul>
+                    </section>
                 </li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <a href="pages/about/about-the-project.html">Über das Projekt</a>
+    <footer class="main-footer">
+        <!-- <a href="pages/about-the-project.html">Über das Projekt</a> -->
         <ul>
             <li>
                 <h2>Barrierefreiheit</h2>

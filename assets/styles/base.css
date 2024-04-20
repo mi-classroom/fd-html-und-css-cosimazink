@@ -1,0 +1,37 @@
+html, body{
+  background-color: var(--color-light);
+  font-family: source-sans-3, Arial, sans-serif;
+  font-weight: var(--fw-regular);
+  font-size: var(--m);
+}
+
+main{
+    background-color: var(--color-gray);
+}
+
+main > *{
+    padding: var(--a);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-bold);
+}
+
+
+h1{
+  font-size: var(--xl);
+}
+
+h2{
+  font-size: var(--l);
+}
+
+h3{
+  font-size: var(--m);
+}
+
+time{
+  font-size: var(--m);
+  padding-left: var(--s);
+  padding: var(--s);
+}
