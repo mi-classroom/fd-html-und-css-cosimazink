@@ -5,6 +5,15 @@ html, body{
   font-size: var(--m);
 }
 
+header {
+  background-color: var(--color-white);
+  padding: var(--l);
+}
+
+footer {
+  background-color: var(--color-white);
+}
+
 main{
     background-color: var(--color-gray);
 }
@@ -20,10 +29,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-size: var(--xl);
+  margin-bottom: var(--s);
 }
 
 h2{
   font-size: var(--l);
+  margin-left: var(--s);
+  margin-right: var(--s);
+  margin-top: var(--l);
+  margin-bottom: var(--s);
 }
 
 h3{

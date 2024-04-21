@@ -1,22 +1,22 @@
-/* Fav List
+/* List
 ---------------------------------------------------------------------------- */
 
-.fav-list {
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* Fav Item
+/* Item
 ---------------------------------------------------------------------------- */
 
-.fav-item {
+.item {
   background-color: var(--color-lightest);
-  padding: var(--s) var(--m) var(--s) var(--s);
+  padding: var(--m);
   position: relative;
   margin: var(--s);
 
-  &::before{
+  &::before {
     position: absolute;
     font-size: var(--xxl);
     display: flex;
@@ -27,94 +27,146 @@
     bottom: 0;
   }
 
-  p, address{
+  .fav-icon {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: var(--xxxl);
+  }
+
+  .ilu-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: var(--xxxl);
+  }
+
+  p,
+  address {
     margin: 0;
     font-style: normal;
     margin-left: var(--xxxl);
     line-height: var(--lh-tight);
   }
 
-  p{
+  p {
     font-weight: var(--fw-medium);
   }
 
-  address{
+  address {
     font-size: smaller;
   }
-
-  /* .icon{
-    position: absolute;
-    top: 10px 5px;
-  } */
 }
 
-.welcome{
-    background-color: var(--color-orange);
-    color: var(--color-lightest);
-    padding: var(--m);
-    margin: var(--s);
-    line-height: var(--l);
-}
+/* Welcome
+---------------------------------------------------------------------------- */
 
-.main-header{
-    background-color: var(--color-lightest);
-    padding: var(--xxl) var(--xxs);
-}
-
-.hedlines{
+.welcome {
+  background-color: var(--color-orange);
+  color: var(--color-lightest);
+  padding: var(--m);
   margin: var(--s);
+  line-height: var(--l);
 }
 
-.cards{
-  margin: var(--m);
+/* Header
+---------------------------------------------------------------------------- */
+
+header {
+  background-color: var(--color-lightest);
+  padding: var(--xxl) var(--xxs);
+
+  nav {
+    .logo-link {
+      margin-left: 65px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 40px;
+      left: 25px;
+      font-size: var(--xxl);
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--s);
+      margin-bottom: -20px;
+    }
+
+    li {
+      flex: 1;
+      text-align: center;
+      font-size: var(--m);
+      font-weight: var(--fw-medium);
+    }
+  }
+}
+
+/* Footer
+---------------------------------------------------------------------------- */
+
+footer {
+
+  background-color: gray;
+  padding-top: var(--s);
+  padding-bottom: var(--s);
+  color: var(--color-lightest);
+
+  ul {
+    padding-bottom: var(--s);
+    margin-left: var(--s);
+  }
 
   li{
+    padding: var(--xxxs);
+  }
+}
+
+/* Cards
+---------------------------------------------------------------------------- */
+
+.cards {
+  margin: var(--m);
+
+  li {
     background-color: var(--color-lightest);
     margin-bottom: var(--s);
     padding-bottom: var(--s);
   }
 
-  img{
+  img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
   }
 
-  h2{
+  h2 {
     padding: var(--s) 0 0 var(--s);
     margin: 0;
     font-weight: var(--fw-bold);
   }
 
-  figcaption{
-    padding: var(--s);
-  }
-
-  address{
+  address {
     margin-left: var(--s);
   }
 }
 
-.tag-list{
-  ul{
+/* Tags
+---------------------------------------------------------------------------- */
+
+.tag-list {
+  ul {
     margin-left: var(--s);
     margin-top: var(--s);
   }
 
-  li{
+  li {
     font-size: var(--s);
     background-color: var(--color-light);
     display: inline;
     padding: var(--quad) var(--half);
-  }
-}
-
-.main-footer{
-  ul{
-    background-color: var(--color-lightest);
-    padding: var(--xxl) var(--xxs);
-  }
-  li{
-    padding
   }
 }

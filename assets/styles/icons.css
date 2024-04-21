@@ -5,7 +5,6 @@
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
-  font-size: var(--xl);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
@@ -17,7 +16,6 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  margin-right: var(--xs);
 }
 
 .has-icon::before {
