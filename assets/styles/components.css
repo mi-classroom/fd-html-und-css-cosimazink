@@ -2,6 +2,8 @@
 ---------------------------------------------------------------------------- */
 
 .list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,10 +13,11 @@
 ---------------------------------------------------------------------------- */
 
 .item {
+  flex: 0 0 calc(50% - var(--s));
+  margin: var(--s);
+  position: relative;
   background-color: var(--color-lightest);
   padding: var(--m);
-  position: relative;
-  margin: var(--s);
 
   &::before {
     position: absolute;
@@ -27,16 +30,10 @@
     bottom: 0;
   }
 
-  .fav-icon {
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    font-size: var(--xxxl);
-  }
-
+  .fav-icon,
   .ilu-icon {
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 5px;
     font-size: var(--xxxl);
   }
@@ -120,7 +117,7 @@ footer {
     margin-left: var(--s);
   }
 
-  li{
+  li {
     padding: var(--xxxs);
   }
 }
