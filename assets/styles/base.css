@@ -1,20 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
 html, body{
   background-color: var(--color-light);
-  font-family: source-sans-3, Arial, sans-serif;
-  font-weight: var(--fw-regular);
+  font-family: "source-sans-3", Arial, sans-serif;
   font-size: var(--m);
+  font-weight: var(--fw-regular);
 }
 
 header {
-  background-color: var(--color-white);
   padding: var(--l);
+  background-color: var(--color-white);
 }
 
 footer {
+  max-width: 80rem;
+  margin: 0 auto;
   background-color: var(--color-white);
 }
 
 main{
+    max-width: 80rem;
+    margin: 0 auto;
     background-color: var(--color-gray);
 }
 
@@ -28,24 +36,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1{
-  font-size: var(--xl);
   margin-bottom: var(--s);
+  font-size: var(--xl);
 }
 
 h2{
+  margin: var(--l) var(--s) var(--s) var(--s);
   font-size: var(--l);
-  margin-left: var(--s);
-  margin-right: var(--s);
-  margin-top: var(--l);
-  margin-bottom: var(--s);
 }
 
 h3{
   font-size: var(--m);
-}
-
-time{
-  font-size: var(--m);
-  padding-left: var(--s);
-  padding: var(--s);
 }
