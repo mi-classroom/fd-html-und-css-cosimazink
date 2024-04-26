@@ -11,13 +11,13 @@ html, body{
 
 header {
   padding: var(--l);
-  background-color: var(--color-white);
+  background-color: var(--color-lightest);
 }
 
 footer {
   max-width: 80rem;
   margin: 0 auto;
-  background-color: var(--color-white);
+  background-color: var(--color-dark);
 }
 
 main{
