@@ -84,22 +84,22 @@
   top: 0;
   left: 0;
   display: flex;
-  width: 200px;
+  width: 300px;
   height: 100vh;
   flex-direction: column;
   padding: var(--xl);
   background-color: var(--color-light);
   gap: var(--l);
   transform: translateX(-100%);
-  transition: transform var(--tr-normal);
+  transition: transform 0.3s ease;
 
-  &.is-active{
+  &.is-active {
     transform: translateX(0);
   }
 
   a {
     color: var(--color-black);
-    font-weight: var(--fw-medium);
+    font-size: var(--l);
     text-decoration: none;
   }
 }
@@ -142,8 +142,14 @@ header {
       }
     }
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       .upper-search-bar {
+        display: none;
+      }
+    }
+
+    @media screen and (width >=1200px) {
+      .search {
         display: none;
       }
     }
@@ -153,7 +159,7 @@ header {
       top: 40px;
       right: 25px;
       cursor: pointer;
-      font-size: var(--xxxl); 
+      font-size: var(--xxxl);
     }
 
     ul {
@@ -174,6 +180,12 @@ header {
       font-weight: var(--fw-regular);
       text-align: center;
       transition: background-color 0.3s ease;
+    }
+
+    a {
+      color: var(--color-black);
+      font-size: var(--l);
+      text-decoration: none;
     }
 
     li:hover {
@@ -206,26 +218,26 @@ header {
         vertical-align: middle;
       }
 
-      li:hover{
+      li:hover {
         background-color: var(--color-lightest);
         font-weight: var(--fw-bold);
       }
     }
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=800px) {
       .nav-list {
         display: none;
       }
     }
   }
 
-  @media screen and (width >= 1200px) {
+  @media screen and (width >=800px) {
     .icon.lower {
       display: none;
     }
   }
 
-  @media screen and (width >= 1200px) {
+  @media screen and (width >=800px) {
     .icon.burger {
       display: none;
     }
