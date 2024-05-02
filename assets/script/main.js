@@ -6,14 +6,33 @@ button.addEventListener("click", () => {
     button.classList.toggle("is-active");
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const menuLinks = document.querySelectorAll("nav ul li a");
+const tabLinks = document.querySelectorAll(".tab-link");
+const tabContents = document.querySelectorAll(".tab-content");
+const mainContent = document.querySelector("main");
 
-    menuLinks.forEach(link => {
-        link.addEventListener("click", function(event) {
-            event.preventDefault(); // Verhindere das Standardverhalten des Links
-            const url = this.getAttribute("href");
-            window.location.href = url; // Weiterleitung zur angegebenen URL
+tabLinks.forEach(tabLink => {
+    tabLink.addEventListener("click", function() {
+        const tabId = this.getAttribute("data-tab");
+
+        const isMeinBereich = this.textContent.trim() === "Mein Bereich";
+
+        if (!isMeinBereich) {
+            mainContent.classList.add("is-hidden");
+        } else {
+            mainContent.classList.remove("is-hidden");
+        }
+
+        tabLinks.forEach(link => {
+            link.classList.remove("is-active");
         });
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove("is-active");
+        });
+
+        this.classList.add("is-active");
+
+        const selectedTabContent = document.getElementById(tabId);
+        selectedTabContent.classList.add("is-active");
     });
 });

@@ -244,6 +244,7 @@ header {
   }
 }
 
+
 .search {
   display: flex;
   align-items: center;
@@ -342,4 +343,20 @@ footer {
     background-color: var(--color-light);
     font-size: var(--s);
   }
+}
+
+tab-content {
+  display: none;
+}
+
+.tab-content.is-active {
+  display: block;
+}
+
+main.is-hidden {
+  display: none;
+}
+
+.tab-link.is-active {
+  background-color: var(--color-grey);
 }
