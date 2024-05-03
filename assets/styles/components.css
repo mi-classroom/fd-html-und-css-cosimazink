@@ -148,12 +148,6 @@ header {
       }
     }
 
-    @media screen and (width >=1200px) {
-      .search {
-        display: none;
-      }
-    }
-
     .icon.burger {
       position: absolute;
       top: 40px;
@@ -359,4 +353,10 @@ main.is-hidden {
 
 .tab-link.is-active {
   background-color: var(--color-grey);
+}
+
+@media screen and (width >=1200px) {
+  .search {
+    display: none;
+  }
 }
