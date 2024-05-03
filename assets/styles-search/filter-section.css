@@ -112,7 +112,8 @@
   li{
     display: inline-block;
     padding: var(--eighth) var(--half);
-    margin-bottom: 0;
+    margin-bottom: var(--half);
+    margin-right: var(--quarter);
     background-color: var(--color-grey);
     font-size: var(--s);
   }
